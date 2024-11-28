@@ -6,7 +6,7 @@ public class Customer extends Person
     private boolean mailingList;
 
 
-    public Customer() // calls parent
+    public Customer(String name, String address, String phoneNumber, int customerNumber, boolean mailingList) // calls parent
     {
         super(); // calls parent constructor from person class //
     }

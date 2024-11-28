@@ -5,16 +5,16 @@ public class PreferredCustomer extends Customer {
     private double DiscountReceived;
 
 
-    public PreferredCustomer() // Default Constructor //
+    public PreferredCustomer(String name, String address, String phoneNumber, int customerNumber, boolean mailingList) // Constructor that calls customer constructor//
     {
-        super(); // Calls parent constructor from customer class //
+        super(name,address,phoneNumber, customerNumber, mailingList); // Calls parent constructor from customer class //
         this.loyaltyPoints = 0;
         this.DiscountReceived = 0.0;
     }
 
     public PreferredCustomer(int loyaltyPoints)
     {
-        super();
+        super(name, address, phoneNumber, customerNumber, mailingList);
         this.loyaltyPoints = loyaltyPoints;
         setDiscountReceived(); // Sets Discount based on loyalty points //
     }
